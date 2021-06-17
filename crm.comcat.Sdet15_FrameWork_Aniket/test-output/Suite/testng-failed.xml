@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test runner 2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.VtigerTest.CreateOrganizationWithIndustryDdTest">
+        <methods>
+          <include name="loginTtoApp"/>
+          <include name="makeDBConnection"/>
+          <include name="createOrganizationWithIndustryDD"/>
+          <include name="logoutOfApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.comcast.VtigerTest.CreateOrganizationWithIndustryDdTest -->
+      <class name="com.crm.comcast.VtigerTest.CreateContactWithOrganizationTest">
+        <methods>
+          <include name="loginTtoApp"/>
+          <include name="logoutOfApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.comcast.VtigerTest.CreateContactWithOrganizationTest -->
+    </classes>
+  </test> <!-- Test runner 2(failed) -->
+  <test name="Test runner 1(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.VtigerTest.CreateOrganizationWithIndustryDdTest">
+        <methods>
+          <include name="loginTtoApp"/>
+          <include name="makeDBConnection"/>
+          <include name="logoutOfApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.comcast.VtigerTest.CreateOrganizationWithIndustryDdTest -->
+      <class name="com.crm.comcast.VtigerTest.CreateContactWithOrganizationTest">
+        <methods>
+          <include name="loginTtoApp"/>
+          <include name="CreateContactWithOrganization"/>
+          <include name="logoutOfApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.comcast.VtigerTest.CreateContactWithOrganizationTest -->
+    </classes>
+  </test> <!-- Test runner 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
